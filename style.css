@@ -1,0 +1,102 @@
+
+body {
+    margin: 0;
+    font-family: 'MedievalSharp', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menu h1 {
+    color: #fff;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: #ff0000;
+}
+
+.table {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+}
+
+.candle img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.book {
+    width: 70%;
+    height: 50%;
+    background: url('book_cover.jpg') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.book.closed .page {
+    display: none;
+}
+
+.book.opened .page {
+    display: block;
+}
+
+.page {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.page.left {
+    left: 0;
+    background: #fff;
+}
+
+.page.right {
+    right: 0;
+    background: #fff;
+}
+
+.page img {
+    width: 100%;
+    height: auto;
+}
